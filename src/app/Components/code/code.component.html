@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layout</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="page-container">
+        <button class="add-codes-btn" routerLink="/addcodes">
+            <span class="material-icons">library_add</span> Add Codes
+        </button>
+        <div class="card-container">
+            <div class="card">
+                <h2><span class="material-icons">assignment_turned_in</span> Leetcode</h2>
+                <p>Enhance your coding skills with Leetcode challenges.</p>
+                <div class="button-group">
+                    <button routerLink="/getcodes" class="get-code" (click)="leetcodePlatform()">
+                        <span class="material-icons">cloud_download</span> Get Code
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <h2><span class="material-icons">assignment_turned_in</span> GeeksForGeeks</h2>
+                <p>Enhance your coding skills with Leetcode challenges.</p>
+                <div class="button-group">
+                    <button routerLink="/getcodes" class="get-code" (click)="gfgPlatform()">
+                        <span class="material-icons">cloud_download</span> Get Code
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <h2><span class="material-icons">assignment_turned_in</span> CodeChef</h2>
+                <p>Enhance your coding skills with Leetcode challenges.</p>
+                <div class="button-group">
+                    <button routerLink="/getcodes" class="get-code" (click)="codechefPlatform()">
+                        <span class="material-icons">cloud_download</span> Get Code
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

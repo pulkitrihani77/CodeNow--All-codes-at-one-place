@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Code Entry</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="page-container">
+        <a routerLink="/code" class="go-to-codes-btn"><span class="material-icons">code</span> Go to Codes</a>
+        <div class="content-wrapper">
+            <div class="form-section">
+                <h2>Add New Entry</h2>
+                <form [formGroup]="codeForm">
+                    <div class="input-group">
+                        <label for="platform">Select Platform</label>
+                        <select [formControl]="platform" id="platform" name="platform" required>
+                            <option value="" disabled selected>Select platform</option>
+                            <option value="leetcode">Leetcode</option>
+                            <option value="gfg">GeeksforGeeks</option>
+                            <option value="codechef">CodeChef</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="topic">Topic Name</label>
+                        <input type="text" [formControl]="topic" id="topic" name="topic" placeholder="Enter topic name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="code-link">Code Link</label>
+                        <input type="text" [formControl]="link" id="code-link" name="code-link" placeholder="Enter code link" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="notes">Notes</label>
+                        <textarea [formControl]="notes" id="notes" name="notes" placeholder="Enter your notes" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn" (click)="createCode()">Submit</button>
+                </form>
+            </div>
+            <div class="code-section">
+                <h2>Code Snippet</h2>
+                <textarea [formControl]="codecode" id="code-snippet" name="code-snippet" placeholder="Paste your code snippet here" required></textarea>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

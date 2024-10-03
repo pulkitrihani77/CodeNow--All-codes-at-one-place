@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Display Page</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Code Overview</h1>
+        <div class="code-card">
+            <div class="code-info">
+                <h2>Topic: {{allCodes.topic}}</h2>
+                <p>Link: <a href="#">{{allCodes.link}}</a></p>
+                <p>Notes: {{allCodes.notes}}</p>
+            </div>
+            <div class="code-snippet">
+                <h3>Code Snippet:</h3>
+                <div class="snippet-container">
+                    <button class="copy-button" (click)="copy()">Copy</button>
+                    <div class="snippet-box">
+                        <textarea id="codeSnippet" readonly>
+                            {{allCodes.codecode}}
+                        </textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button (click)="deleteCode()">Delete</button>
+</body>
+</html>

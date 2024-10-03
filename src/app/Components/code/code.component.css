@@ -1,0 +1,91 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+}
+
+.page-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.add-codes-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #ff4757; /* Red */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-codes-btn:hover {
+  background-color: #e84118; /* Darker red */
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 60px; /* Add space for the button */
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex: 0 1 calc(33.33% - 20px);
+  margin: 10px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-sizing: border-box;
+}
+
+.card h2 {
+  color: #3949AB;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.card h2 .material-icons {
+  margin-right: 8px;
+}
+
+.card p {
+  color: #555;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 15px;
+}
+
+.card button {
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.get-code {
+  background-color: #ffa502;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

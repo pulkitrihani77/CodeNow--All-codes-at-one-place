@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Topics</title>
+</head>
+
+<body>
+
+    <div class="container">
+        @for (item of allCodes; track item.id) {
+        <div class="code-item">
+            <span class="topic-name">{{item.topic}}</span>
+            <button (click)="deletecode(item.id)">Delete</button>
+            <button [routerLink]="['/displaycode', item.id]" class="open-code-btn">Open Code</button>
+        </div>
+        }
+    </div>
+</body>
+
+</html>

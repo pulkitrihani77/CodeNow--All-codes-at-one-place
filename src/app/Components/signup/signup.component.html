@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Sign Up</title>
+</head>
+<body>
+    <div class="signup-page-container">
+        <div class="left-section">
+            <div class="signup-text">
+                <h1>Join Us Today!</h1>
+                <p>Create an account to access exclusive features and benefits. Become a part of something bigger!</p>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="signup-box">
+                <h2>Create Account</h2>
+                <form [formGroup]="signupForm">
+                    <label for="first-name">First Name</label>
+                    <input type="text" [formControl]="firstname" id="first-name" name="first-name" required>
+
+                    <label for="last-name">Last Name</label>
+                    <input type="text" [formControl]="lastname" id="last-name" name="last-name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" [formControl]="email" id="email" name="email" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" [formControl]="password" id="password" name="password" required>
+
+                    <button type="submit" (click)="signupUser()">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

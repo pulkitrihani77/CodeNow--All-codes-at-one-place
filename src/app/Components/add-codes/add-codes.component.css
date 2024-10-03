@@ -1,0 +1,128 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.go-to-codes-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 12px 18px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.go-to-codes-btn:hover {
+  background-color: #45a049;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  width: 90%;
+  max-width: 1400px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.form-section, .code-section {
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.form-section {
+  width: 40%;
+  margin-right: 30px;
+}
+
+.code-section {
+  width: 45%;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input, select, textarea {
+  width: 100%;  /* Full width, includes padding and border */
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  box-sizing: border-box; /* Ensures padding and border are included in width */
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #4CAF50;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+textarea {
+  resize: none;
+}
+
+textarea#notes {
+  height: 150px;
+  overflow-y: scroll;
+}
+
+textarea#code-snippet {
+  height: 520px;
+  overflow-y: scroll;
+}
+
+.submit-btn {
+  width: 100%;  /* Full width */
+  padding: 14px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+  .form-section, .code-section {
+    width: 100%;
+    margin-right: 0;
+  }
+}

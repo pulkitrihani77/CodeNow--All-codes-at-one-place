@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+}
+
+.signup-page-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(145deg, #ffffff, #e2e2e2); /* Light, smooth gradient */
+    overflow: hidden;
+}
+
+.left-section {
+    width: 40%;
+    background-color: #1976D2; /* Different accent color from login */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.signup-text {
+    text-align: center;
+    padding: 0 40px;
+}
+
+.signup-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.signup-text p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.right-section {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8; /* Lighter than the login */
+}
+
+.signup-box {
+    width: 450px;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #444;
+    font-weight: 500;
+}
+
+input {
+    margin-bottom: 18px;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    border-color: #1976D2; /* Consistent color with left section */
+    box-shadow: 0 0 5px rgba(63, 81, 181, 0.5);
+    outline: none;
+}
+
+button {
+    padding: 15px;
+    background-color: #1975d1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3949AB;
+}
+
+@media (max-width: 768px) {
+    .signup-page-container {
+        flex-direction: column;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        height: 50%;
+    }
+}
