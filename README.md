@@ -28,7 +28,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Backend Database:
 
-Firebase
+Firestore (Firebase)
 
 # Quick Overview:
 
